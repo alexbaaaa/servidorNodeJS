@@ -1,3 +1,4 @@
 fetch("http://localhost:3000")
-    .then(text => text.text())
+    .then(response => response.text())
+    .then(data => console.log(data))
     
