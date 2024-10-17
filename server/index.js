@@ -3,7 +3,10 @@ const app = express();
 const port = 3000;
 
 app.get('/', (req,res) => {
-    res.send("Te has conectado");
+    let respuesta = {
+        "mensaje": "Hola pepe"
+    }
+    res.send(JSON.stringify(respuesta));
 });
 
 app.listen(port, () => {
